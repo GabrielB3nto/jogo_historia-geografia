@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz HTML e CSS</title>
+    <link rel="stylesheet" href="__.css">
+    <script src="javas_.js" defer></script>
+
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Quiz de HTML e CSS</h1>
+
+        <form id="quizForm">
+            <div class="question" id="question1">
+                <h3> 1. Qual era o nome do tratado cujas imposições eram duras e humilhantes para as nações derrotadas: </h3>
+                <label><input type="radio" name="q1" value="correto"> Tratado de Versalhes </label>
+                <label><input type="radio" name="q1" value="errado"> Home Tool Markup Language</label>
+                <label><input type="radio" name="q1" value="errado"> Hyperlink Text Markup Language</label>
+            </div>
+
+            <div class="question" id="question2" style="display:none;">
+                <h3>2. Qual tag HTML é usada para definir um parágrafo?</h3>
+                <label><input type="radio" name="q2" value="errado"> &lt;heading&gt;</label>
+                <label><input type="radio" name="q2" value="correto"> &lt;p&gt;</label>
+                <label><input type="radio" name="q2" value="errado"> &lt;paragraph&gt;</label>
+            </div>
+
+            <div class="question" id="question3" style="display:none;">
+                <h3>3. Qual propriedade CSS é usada para alterar a cor de fundo?</h3>
+                <label><input type="radio" name="q3" value="correto"> background-color</label>
+                <label><input type="radio" name="q3" value="errado"> bgcolor</label>
+                <label><input type="radio" name="q3" value="errado"> color-background</label>
+            </div>
+
+            <button type="button" onclick="verificarResposta()">Enviar Resposta</button>
+
+            <div class="result" id="result"></div>
+        </form>
+    </div>
+
+
+</body>
+</html>
